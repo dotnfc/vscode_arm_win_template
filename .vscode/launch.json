@@ -23,7 +23,20 @@
             "serialNumber": "",
             "gdbPath": "${config:CUBEIDE-ARMGCC}/arm-none-eabi-gdb.exe",
             "jlinkscript":"",
-            "svdFile": "${workspaceFolder}/STM32F103xx.svd",
+            "svdFile": "${config:CUBEIDE-SVD}/STM32F103.svd",
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                // "clearSearch": false    // OpenOCD users may have to un-comment this
+                "decoders": [
+                    {
+                        "port": 0,
+                        "type": "console"  
+                        // "type": "binary",
+                        // "encoding": "unsigned",
+                    }
+                ]
+            }
         },
         {
             // https://github.com/Marus/cortex-debug/wiki/Multi-core-debugging#st-link-notes
@@ -39,7 +52,7 @@
             "gdbPath": "${config:CUBEIDE-ARMGCC}/arm-none-eabi-gdb.exe",
             "serverpath": "${config:CUBEIDE-STLINK-GDB-SERVER}/ST-LINK_gdbserver.exe",
             "stm32cubeprogrammer": "${config:CUBEIDE-PROG}",
-            "svdFile": "${workspaceFolder}/STM32F103xx.svd",
+            "svdFile": "${config:CUBEIDE-SVD}/STM32F103.svd",
             "v1": false,
             "showDevDebugOutput": "parsed",
             "serverArgs": [

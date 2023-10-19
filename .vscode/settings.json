@@ -1,7 +1,9 @@
 {
     "SEGGER": "d:/Program/SEGGER/JLink_V784c",
     "ARMGCC": "d:/Java/ArmDev/armgcc10/bin",
-    "CUBEIDE-PLUGIN": "e:/Program/STM/STM32CubeIDE/plugins",
+    
+    // "CUBEIDE-PLUGIN": "e:/Program/STM/STM32CubeIDE/plugins",
+    "CUBEIDE-PLUGIN": "D:/Program/STM/STM32CubeIDE/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins",
     "CUBEIDE-MAKE": "${config:CUBEIDE-PLUGIN}/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.1.0.202305091550/tools/bin",
     "CUBEIDE-SEGGER": "${config:CUBEIDE-PLUGIN}/com.st.stm32cube.ide.mcu.externaltools.jlink.win32_2.2.0.202305091550/tools/bin",
     "CUBEIDE-PROG": "${config:CUBEIDE-PLUGIN}/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.1.0.202305091550/tools/bin",
